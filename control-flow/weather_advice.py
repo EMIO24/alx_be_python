@@ -1,6 +1,6 @@
 #!/bin/python3
 
-weather_condition = input\(\"What's the weather like today\?\s*\(sunny\/rainy\/cold\):''')
+weather_condition = input("What's the weather like today? (sunny/rainy/cold): ")
 if weather_condition.lower() == 'sunny':
     print("Wear a t-shirt and sunglasses.")
 elif weather_condition.lower() == 'rainy':
