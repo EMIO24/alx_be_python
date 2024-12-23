@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/bin/python3.10
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
 operator = input("Choose the operation (+, -, *, /): ")
@@ -10,8 +10,8 @@ match operator:
     case "*":
         result = num1 * num2
     case "/":
-        if num1 == 0 or num2 == 0:
+        if num2 == 0:
             print("Cannot divide by zero.")
         else:
             result = num1 / num2
-print(f"The result is {result}")
+print(f"The result is {result}"
