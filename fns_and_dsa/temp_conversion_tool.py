@@ -8,11 +8,12 @@ def convert_to_fahrenheit(celsius):
     return fahrenheit
 
 var1 = input('Enter the temperature to convert: ')
-var = int(input('Please enter a numeric value. '))
 var2 = input('Is this temperature in Celsius or Fahrenheit? (C/F): ')
-if var2.upper() == 'F' and var1.upper() == 'CELSIUS':
-    convert = convert_to_celsius(var)
-    print(f'{var}°F is {convert}°C')
+if var2.upper() == 'F':
+    convert = convert_to_celsius(var1)
+    print(f'{var1}°F is {convert}°C')
 elif var2.upper() == 'C':
-    convert = convert_to_fahrenheit(var)
-    print(f'{var}°C is {convert}°F')
+    convert = convert_to_fahrenheit(var1)
+    print(f'{var1}°C is {convert}°F')
+else:
+    print("Invalid temperature. Please enter a numeric value.")
