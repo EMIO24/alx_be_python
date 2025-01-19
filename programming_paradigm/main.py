@@ -4,7 +4,7 @@ from bank_account import BankAccount
 def main():
     account = BankAccount(100)  # Example starting balance
     command = input('Enter your input: ')
-    amount = int(input('Enter the amount: '))
+    amount = float(input('Enter the amount: '))
     if command == "deposit" and amount is not None:
         account.deposit(amount)
         print(f"Deposited: ${amount}")
