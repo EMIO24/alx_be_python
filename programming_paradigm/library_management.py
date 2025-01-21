@@ -1,3 +1,5 @@
+def __init__(self):
+    pass
 class Book:
     def __init__(self, title, author, _is_checked_out, _books):
         self.title = title
