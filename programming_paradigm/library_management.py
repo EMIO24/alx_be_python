@@ -25,3 +25,6 @@ class Library(Book):
             if self.title != title:
                 if self._is_checked_out is True:
                     self._books.append(self)
+    def list_available_books(self):
+        return self._books
+    
