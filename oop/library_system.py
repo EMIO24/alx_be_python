@@ -4,7 +4,6 @@ class Book:
         self.author = author
         
 class EBook(Book):
-    
     def __init__(self, title, author, file_size):
         Book.__init__(self, title, author)
         self.file_size = file_size
