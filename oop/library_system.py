@@ -24,9 +24,7 @@ class PrintBook(Book):
         return f"{super().__str__()}, Pages: {self.page_count}"        
 class Library:
     def __init__(self, books):
-        self.books = books
-        books = []
-        
+        self.books = []
         
     def add_book(self, book):
         if isinstance(book, Book):
