@@ -3,7 +3,7 @@ class Book:
         self.title = title
         self.author = author
         
-class Ebook(Book):
+class EBook(Book):
     
     def __init__(self, title, author, file_size):
         Book.__init__(self, title, author)
@@ -16,7 +16,9 @@ class PrintBook(Book):
         
 class Library:
     def __init__(self, books):
-        self.books = []
+        self.books = books
+        books = []
+        
         
     def add_book(self, book):
         if isinstance(book, Book):
